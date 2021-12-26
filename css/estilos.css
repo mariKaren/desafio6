@@ -233,6 +233,12 @@ header {
 .instagramSeguinos {
     font-size: 20px;
     font-family: 'Lora', serif;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.instagramSeguinos:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 
