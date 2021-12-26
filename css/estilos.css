@@ -137,6 +137,11 @@ header {
     margin-top: 30px;
     background-color:#d1b3c4;
     color: white;
+    transition-duration: 0,3s;
+}
+
+.tituloColeccion:hover{
+    border-radius: 20px;
 }
 
 .productosMiniColeccion {
