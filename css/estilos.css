@@ -91,6 +91,12 @@ header {
     color: black;
     font-style: italic;
 }
+.tituloNewIn:hover{ animation: 1s flash 1;}
+@keyframes flash
+{
+    50% {opacity:1; }
+    25%, 75% {opacity: 0; }
+}
 .newIn a{
     text-decoration: none;
 }
