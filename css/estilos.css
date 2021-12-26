@@ -142,7 +142,15 @@ header {
 
 .tituloColeccion:hover{
     border-radius: 20px;
+	animation: 1s vibrar infinite;
 }
+
+@keyframes vibrar
+{
+	5%, 25%, 45%, 65%, 85% { transform: translateX(-10px); }
+	15%, 35%, 55%, 75%, 95% { transform: translateX(10px); }
+}
+
 
 .productosMiniColeccion {
     display: flex;
