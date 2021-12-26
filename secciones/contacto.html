@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto-Reverence Desing</title>
+</head>
+
+<body>
+    <header>
+        <img class="header__img" src="../multimedia/Logo.jpeg" alt="Logo reverence">
+    </header>
+    <nav class="navPrincipal">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="regala.html">Regalá</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="tituloSeccion">Contacto</h1>
+        <form class="datosContacto" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="casilla1">Nombre</label>
+            <input type="text"><br>
+
+            <label for="casilla2">Apellido</label>
+            <input type="text"><br>
+
+            <label for="casilla3">Mail</label>
+            <input class="casillaMail" type="email" required><br>
+
+            <label for="casilla4">Teléfono</label>
+            <input type="text"><br>
+
+            <textarea class="casillaMensaje" name="areadetexto" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+
+            <input type="submit" value="enviar">
+            <input class="botonContacto" type="reset" value="borrar">
+
+        </form>
+    </main>
+    <footer>
+        <nav class="navFooter"> 
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="regala.html">Regalá</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+        <section class="datosFooter">
+            <p>Número</p>
+            <p>Mail</p>
+            <p>Ubicación</p>
+        </section>
+        <p class="copyRight">Copyright 2021-Reverence Desing</p>
+    </footer>
+</body>
+
+</html>

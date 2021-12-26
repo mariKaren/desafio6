@@ -1,0 +1,1330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyHome {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "mainHome mainHome mainHome"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img {
+    width: 8%;
+    height: auto;
+}
+
+.navPrincipal {
+    grid-area: nav;
+    width: 100%;
+    height: 31px;
+    text-align: center;
+    background-color: #d1b3c4;
+}
+
+.navPrincipal a {
+    text-decoration: none;
+    color: white;
+}
+
+.navPrincipal li {
+    display: inline-block;
+    width: 10%;
+    padding: 5px 5px 5px 5px;
+}
+
+.navPrincipal li:hover {
+    background-color: white;
+}
+
+.navPrincipal a:hover {
+    color: #d1b3c4;
+}
+
+
+.mainHome {
+    grid-area: mainHome;
+}
+
+.imgPortada {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    background-image: url(../multimedia/portada.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuevosProductos {
+    width: 100%;
+    height: 450px;
+    background-color:#f8edeb;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo producto1 producto2";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.newIn {
+    grid-area: titulo;
+    font-size: 70px;
+    font-family: 'Lora', serif;
+    color: black;
+    font-style: italic;
+}
+.newIn a{
+    text-decoration: none;
+}
+.nuevoProductoUno {
+    grid-area: producto1;
+    background-image: url(../multimedia/nuevoproducto1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuevoProductoUno:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.nuevoProductoDos {
+    grid-area: producto2;
+    background-image: url(../multimedia/nuevoproducto2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuevoProductoDos:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.miniColeccion {
+    width: 100%;
+}
+
+.tituloColeccion {
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 30px;
+    background-color:#d1b3c4;
+    color: white;
+}
+
+.productosMiniColeccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.coleccion1 {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/coleccion1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.coleccion1:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.coleccion2 {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto6.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.coleccion2:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.coleccion3 {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/coleccion4.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.coleccion3:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.verMas {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botonVerMas {
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: #f8edeb;
+    color: black;
+    font-style: italic;
+}
+
+.redesSociales {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.redesSociales a {
+    text-decoration: none;
+}
+
+.instagramHome span {
+    background-color: #eddcd2;
+    font-size: 30px;
+    color: white;
+}
+
+.instagramSeguinos {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 205px;
+    background-color: #f8edeb;
+    display: grid;
+    grid-template-areas:
+        "NavFooter NavFooter"
+        "Datos Datos"
+        "copyRight copyRight";
+}
+
+.navFooter {
+    width: 100%;
+    height: 1.5%;
+    text-align: center;
+    grid-area: NavFooter;
+}
+
+.navFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+.navFooter li {
+    display: inline-block;
+    width: 8%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.datosFooter {
+    grid-area: Datos;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.datosFooter h2 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contactanos {
+    margin-right: 60px;
+}
+
+.datosContactanos {
+    background-color: white;
+    text-align: center;
+}
+
+.copyRight {
+    margin-bottom: 2px;
+    margin-top: 45px;
+    font-size: 13px;
+    margin-left: 8px;
+    grid-area: copyRight;
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 479px) {
+    header {
+        height: 60px;
+    }
+
+    .header__img {
+        width: 90px;
+    }
+
+    .navPrincipal {
+        height: 20px;
+    }
+
+    .navPrincipal a {
+        font-size: 12px;
+    }
+
+    .navPrincipal li {
+        padding: 0px 0px 0px 0px;
+        padding-bottom: 5px;
+        width: 16%;
+    }
+
+    .navPrincipal li:hover {
+        height: 20px;
+    }
+
+    .imgPortada {
+        height: 300px;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .nuevosProductos {
+        width: 100%;
+        height: auto;
+        grid-template-areas:
+            ". titulo ."
+            ". producto1 ."
+            ". producto2 .";
+        grid-template-rows: 100px 280px 280px;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .newIn {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 30px;
+    }
+
+    .nuevoProductoDos {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .tituloColeccion {
+        font-size: 25px;
+    }
+
+    .coleccion1 {
+        width: 250px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .coleccion2 {
+        width: 250px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .coleccion3 {
+        width: 250px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .botonVerMas {
+        font-size: 12px;
+    }
+
+    .redesSociales {
+        margin-top: 30px;
+    }
+
+    .instagramHome span {
+        font-size: 20px;
+    }
+
+    .instagramSeguinos {
+        font-size: 15px;
+    }
+    footer{
+        height: 120px;
+    }
+    .navFooter a{
+        font-size: 10px;
+    }
+    .navFooter li{
+        width: 15%;
+    }
+    .datosFooter{
+        margin-top: 5px;
+    }
+    .datosFooter h2{
+        font-size: 12px;
+    }
+    .datosContactanos{
+        font-size: 12px;
+    }
+    .copyRight{
+        font-size: 9px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width:479px) and (max-width: 640px) {
+    header {
+        height: 65px;
+    }
+
+    .header__img {
+        width: 100px;
+    }
+
+    .navPrincipal {
+        height: 20px;
+    }
+
+    .navPrincipal a {
+        font-size: 13px;
+    }
+
+    .navPrincipal li {
+        padding: 0px 0px 0px 0px;
+        padding-bottom: 5px;
+        width: 16%;
+    }
+
+    .navPrincipal li:hover {
+        height: 20px;
+    }
+
+    .imgPortada {
+        height: 350px;
+        margin-top: 20px;
+        background-size: cover;
+        background-position-x: left;
+        background-position-y:center ;
+        margin-bottom: 20px;
+    }
+    .nuevosProductos {
+        width: 100%;
+        height: auto;
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "producto1 producto1 producto2 producto2";
+        grid-template-rows: 100px 310px;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .newIn {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 25px;
+    }
+    .nuevoProductoUno{
+        margin-bottom: 20px;
+    }
+    .nuevoProductoDos {
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    .tituloColeccion{
+        font-size: 25px;
+    }
+    .coleccion1 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+
+    .coleccion2 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+
+    .coleccion3 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+    .botonVerMas {
+        font-size: 15px;
+    }
+
+    .redesSociales {
+        margin-top: 30px;
+    }
+
+    .instagramHome span {
+        font-size: 25px;
+    }
+
+    .instagramSeguinos {
+        font-size: 20px;
+    }
+    footer{
+        height: 140px;
+    }
+    .navFooter a{
+        font-size: 12px;
+    }
+    .navFooter li{
+        width: 10%;
+    }
+    .datosFooter{
+        margin-top: 5px;
+    }
+    .datosFooter h2{
+        font-size: 13px;
+    }
+    .datosContactanos{
+        font-size: 13px;
+    }
+    .copyRight{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width:640px) and (max-width: 800px) {
+    header {
+        height: 65px;
+    }
+
+    .header__img {
+        width: 100px;
+    }
+
+    .navPrincipal {
+        height: 20px;
+    }
+
+    .navPrincipal a {
+        font-size: 13px;
+    }
+
+    .navPrincipal li {
+        padding: 0px 0px 0px 0px;
+        padding-bottom: 5px;
+        width: 16%;
+    }
+
+    .navPrincipal li:hover {
+        height: 20px;
+    }
+
+    .imgPortada {
+        height: 350px;
+        margin-top: 20px;
+        background-size: cover;
+        background-position-x: left;
+        background-position-y:center ;
+        margin-bottom: 20px;
+    }
+    .nuevosProductos {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-areas:
+            "titulo titulo producto1 producto2";
+        grid-template-rows: 300px;
+        grid-template-columns: 1fr 0.25fr 1fr 1fr;
+    }
+
+    .newIn {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 35px;
+    }
+    .nuevoProductoUno{
+        margin-right: 15px;
+    }
+    .nuevoProductoDos {
+        margin-right: 15px;
+    }
+    .tituloColeccion{
+        font-size: 25px;
+    }
+    .coleccion1 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+
+    .coleccion2 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+
+    .coleccion3 {
+        width: 270px;
+        height: 320px;
+        margin-top: 20px;
+    }
+    .botonVerMas {
+        font-size: 15px;
+    }
+
+    .redesSociales {
+        margin-top: 30px;
+    }
+
+    .instagramHome span {
+        font-size: 25px;
+    }
+
+    .instagramSeguinos {
+        font-size: 20px;
+    }
+    footer{
+        height: 140px;
+    }
+    .navFooter a{
+        font-size: 12px;
+    }
+    .navFooter li{
+        width: 10%;
+    }
+    .datosFooter{
+        margin-top: 5px;
+    }
+    .datosFooter h2{
+        font-size: 13px;
+    }
+    .datosContactanos{
+        font-size: 13px;
+    }
+    .copyRight{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width:800px) and (max-width: 899px) {
+    header {
+        height: 80px;
+    }
+
+    .header__img {
+        width: 130px;
+    }
+
+    .navPrincipal {
+        height: 25px;
+    }
+
+    .navPrincipal a {
+        font-size: 15px;
+    }
+
+    .navPrincipal li {
+        padding: 0px 0px 0px 0px;
+        padding-top: 2px;
+        width: 16%;
+    }
+
+    .navPrincipal li:hover {
+        height: 25px;
+    }
+
+    .imgPortada {
+        height: 350px;
+        margin-top: 10px;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .nuevosProductos {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-areas:
+            "titulo titulo producto1 producto2";
+        grid-template-rows: 300px;
+        grid-template-columns: 1fr 0.25fr 1fr 1fr;
+    }
+
+    .newIn {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 35px;
+    }
+    .nuevoProductoUno{
+        margin-right: 15px;
+    }
+    .nuevoProductoDos {
+        margin-right: 15px;
+    }
+    .tituloColeccion{
+        font-size: 30px;
+    }
+    .coleccion1 {
+        width: 300px;
+        height: 350px;
+        margin-top: 20px;
+    }
+
+    .coleccion2 {
+        width: 300px;
+        height: 350px;
+        margin-top: 20px;
+    }
+
+    .coleccion3 {
+        width: 300px;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .botonVerMas {
+        font-size: 15px;
+    }
+
+    .redesSociales {
+        margin-top: 30px;
+    }
+
+    .instagramHome span {
+        font-size: 25px;
+    }
+
+    .instagramSeguinos {
+        font-size: 20px;
+    }
+    footer{
+        height: 140px;
+    }
+    .navFooter a{
+        font-size: 12px;
+    }
+    .navFooter li{
+        width: 10%;
+    }
+    .datosFooter{
+        margin-top: 5px;
+    }
+    .datosFooter h2{
+        font-size: 13px;
+    }
+    .datosContactanos{
+        font-size: 13px;
+    }
+    .copyRight{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width:899px) {
+    header {
+        height: 80px;
+    }
+
+    .header__img {
+        width: 130px;
+    }
+
+    .navPrincipal {
+        height: 26px;
+    }
+
+    .navPrincipal a {
+        font-size: 16px;
+    }
+
+    .navPrincipal li {
+        padding: 0px 0px 0px 0px;
+        padding-top: 3px;
+        width: 12%;
+    }
+
+    .navPrincipal li:hover {
+        height: 26px;
+    }
+
+    .imgPortada {
+        height: 410px;
+        margin-top: 10px;
+        background-position: top;
+    
+    }
+
+    .nuevosProductos {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        grid-template-areas:
+            "titulo titulo producto1 producto2";
+        grid-template-rows: 350px;
+        grid-template-columns: 1fr 0.25fr 1fr 1fr;
+    }
+
+    .newIn {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nuevoProductoUno{
+        margin-right: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nuevoProductoDos {
+        margin-right: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .tituloColeccion{
+        font-size: 35px;
+    }
+    .coleccion1 {
+        width: 350px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .coleccion2 {
+        width: 350px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .coleccion3 {
+        width: 350px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .botonVerMas {
+        font-size: 17px;
+    }
+
+    .redesSociales {
+        margin-top: 30px;
+    }
+
+    .instagramHome span {
+        font-size: 30px;
+    }
+
+    .instagramSeguinos {
+        font-size: 20px;
+    }
+    footer{
+        height: 140px;
+    }
+    .navFooter a{
+        font-size: 12px;
+    }
+    .navFooter li{
+        width: 10%;
+    }
+    .datosFooter{
+        margin-top: 5px;
+    }
+    .datosFooter h2{
+        font-size: 15px;
+    }
+    .datosContactanos{
+        font-size: 13px;
+    }
+    .copyRight{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+
+/* FIN CSS INDEX */
+
+/* CSS DE PRODUCTOS */
+
+.bodyProductos {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "mainProductos mainProductos mainProductos"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+.mainProductos{
+    grid-area: mainProductos ;
+}
+
+.bodyProductos{
+    width: 100%;
+}
+
+.tituloSeccion{
+    grid-area: tituloSeccion;
+    font-size: 25px;
+    text-align: center;
+    font-family:'Petit Formal Script', cursiva;
+    font-style: italic;
+    background-color: #f8edeb;
+    padding-top: 5px;
+  
+}
+.igProd a{
+    text-decoration: none;
+}
+
+.instagramProductos{
+    grid-area: instagram;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #e8c2ca;
+
+}
+
+.galeriaProductos{
+    grid-area: productos;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.productoUno {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoUno:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.productoDos {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto\ 2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoDos:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.productoTres {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto\ 3.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoTres:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.productoCuatro {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto4.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoCuatro:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.productoCinco {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/nuevoproducto2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoCinco:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.productoSeis {
+    width: 350px;
+    height: 550px;
+    background-image: url(../multimedia/producto6.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productoSeis:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.botonvermasProductos{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.botonvermasProductos span{
+    border: 2px solid white;
+    background-color:#f8edeb;
+    color:black;
+}
+
+@media only screen and (min-width:320px) and (max-width: 450px) {
+    .mainProductos {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        " tituloSeccion "
+        " instagram "
+        " productos ";
+        grid-template-rows: 30px 20px auto;
+        grid-template-columns: 1fr;
+    }
+    .tituloSeccion{
+        grid-area: tituloSeccion;
+        font-size: 16px;
+    }
+    .instagramProductos{
+        grid-area: instagram;
+        font-size: 12px;
+        text-align: right;
+        padding-right: 2px;
+    }
+    .galeriaProductos{
+        grid-area: productos;
+    }
+    .productoUno {
+        width: 250px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .productoDos {
+        width: 250px;
+        height: 300px;
+    }
+    .productoTres {
+        width: 250px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .productoCuatro{
+        width: 250px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .productoCinco {
+        width: 220px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .productoSeis {
+        width: 250px;
+        height: 280px;
+        margin-top: 20px;
+    }
+    .botonvermasProductos{
+        font-size: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width: 599px) {
+    .mainProductos {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        " tituloSeccion "
+        " instagram "
+        " productos ";
+        grid-template-rows: 30px 20px auto;
+        grid-template-columns: 1fr;
+    }
+    .tituloSeccion{
+        grid-area: tituloSeccion;
+        font-size: 18px;
+    }
+    .instagramProductos{
+        grid-area: instagram;
+        font-size: 15px;
+        text-align: right;
+        padding-right: 2px;
+    }
+    .galeriaProductos{
+        grid-area: productos;
+    }
+    .productoUno {
+        width: 180px;
+        height: 230px;
+        margin-top: 5px;
+        background-size: cover;
+    }
+    .productoDos {
+        width: 250px;
+        height: 300px;
+    }
+    .productoTres {
+        width: 250px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .productoCuatro{
+        width: 180px;
+        height: 230px;
+        margin-top: 20px;
+    }
+    .productoCinco {
+        width: 180px;
+        height: 230px;
+        margin-top: 10px;
+    }
+    .productoSeis {
+        width: 250px;
+        height: 280px;
+        margin-top: 10px;
+    }
+    .botonvermasProductos{
+        font-size: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width:599px) and (max-width: 750px) {
+    .mainProductos {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        " tituloSeccion "
+        " instagram "
+        " productos ";
+        grid-template-rows: 30px 20px auto;
+        grid-template-columns: 1fr;
+    }
+    .tituloSeccion{
+        grid-area: tituloSeccion;
+        font-size: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .instagramProductos{
+        grid-area: instagram;
+        font-size: 15px;
+        text-align: right;
+        padding-right: 2px;
+    }
+    .galeriaProductos{
+        grid-area: productos;
+    }
+    .productoUno {
+        width: 250px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .productoDos {
+        width: 250px;
+        height: 300px;
+    }
+    .productoTres {
+        width: 250px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .productoCuatro{
+        width: 250px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .productoCinco {
+        width: 250px;
+        height: 300px;
+        margin-top: 10px;
+    }
+    .productoSeis {
+        width: 250px;
+        height: 280px;
+        margin-top: 10px;
+    }
+    .botonvermasProductos{
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width:750px) and (max-width: 920px) {
+    .mainProductos {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        " tituloSeccion "
+        " instagram "
+        " productos ";
+        grid-template-rows: 30px 20px auto;
+        grid-template-columns: 1fr;
+    }
+    .tituloSeccion{
+        grid-area: tituloSeccion;
+        font-size: 20px;
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+    .instagramProductos{
+        grid-area: instagram;
+        font-size: 15px;
+        text-align: right;
+        padding-right: 2px;
+    }
+    .galeriaProductos{
+        grid-area: productos;
+    }
+    .productoUno {
+        width: 230px;
+        height: 280px;
+        margin-top: 5px;
+    }
+    .productoDos {
+        width: 230px;
+        height: 280px;
+    }
+    .productoTres {
+        width: 230px;
+        height: 280px;
+        margin-top: 5px;
+    }
+    .productoCuatro{
+        width: 230px;
+        height: 280px;
+        margin-top: 20px;
+    }
+    .productoCinco {
+        width: 230px;
+        height: 280px;
+        margin-top: 10px;
+    }
+    .productoSeis {
+        width: 230px;
+        height: 280px;
+        margin-top: 10px;
+    }
+    .botonvermasProductos{
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width:920px) and (max-width: 1179px) {
+    .mainProductos {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        " tituloSeccion "
+        " instagram "
+        " productos ";
+        grid-template-rows: 30px 20px auto;
+        grid-template-columns: 1fr;
+    }
+    .tituloSeccion{
+        grid-area: tituloSeccion;
+        font-size: 22px;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+    .instagramProductos{
+        grid-area: instagram;
+        font-size: 18px;
+        text-align: right;
+        padding-right: 2px;
+    }
+    .galeriaProductos{
+        grid-area: productos;
+    }
+    .productoUno {
+        width: 280px;
+        height: 330px;
+        margin-top: 5px;
+        background-size: cover;
+    }
+    .productoDos {
+        width: 300px;
+        height: 350px;
+    }
+    .productoTres {
+        width: 300px;
+        height: 350px;
+        margin-top: 5px;
+    }
+    .productoCuatro{
+        width: 300px;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .productoCinco {
+        width: 300px;
+        height: 350px;
+        margin-top: 10px;
+    }
+    .productoSeis {
+        width: 300px;
+        height: 350px;
+        margin-top: 10px;
+    }
+    .botonvermasProductos{
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
